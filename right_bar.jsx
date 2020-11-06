@@ -2,6 +2,7 @@ import get from 'lodash/fp/get';
 import Memory from './components/memory.jsx';
 import Wifi from './components/wifi.jsx';
 import Battery from './components/battery.jsx';
+import Volume from './components/volume.jsx'
 import { parse } from './helpers.jsx';
 
 export const command = 'sh yabai-status-bar/scripts/right_bar.sh';
@@ -35,6 +36,7 @@ export const render = ({ output }) => {
       <Memory data={get('memory')(data)} />
       <Wifi data={get('wifi')(data)} />
       <Battery data={get('battery')(data)} />
+      <Volume data={get('volume')(data)} />
       <div>{get('date_time')(data)}</div>
     </div>
   );

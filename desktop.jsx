@@ -4,17 +4,17 @@ import { parse } from './helpers.jsx';
 
 export const command = 'sh yabai-status-bar/scripts/desktop.sh';
 
-export const refreshFrequency = false;
+export const refreshFrequency = true;
 
 export const className = `
   color: #a8a8a8;
-  font-family: Helvetica Neue;
+  font-family: Source Sans Pro;
 
   .desktop {
     align-items: center;
     color: #a8a8a8;
     display: flex;
-    font-family: Helvetica Neue;
+    font-family: Source Sans Pro;
     font-size: 14px;
     height: 23px;
     margin-left: 20px;
@@ -24,8 +24,8 @@ export const className = `
 const mapWithIndex = map.convert({ cap: false });
 
 const iconList = [
-  'fi emacs-icon',
-  'fi terminal-icon',
+  'fas fa-beer',
+  'fas fa-terminal',
   'fab fa-chrome',
   'fab fa-slack',
   'fas fa-comments',
